@@ -1,0 +1,30 @@
+{
+  "project_name": "multi-agent-code-reviewer",
+  "title": "Multi-Agent Code Review System",
+  "category": "multi-agent",
+  "difficulty": "advanced",
+  "description": "Multi-agent system with specialized agents (Security, Performance, Style, Orchestrator) collaborating via message-passing architecture for comprehensive code reviews.",
+  "tech_stack": [
+    "pydantic",
+    "click",
+    "rich",
+    "pytest"
+  ],
+  "features": [
+    "Four specialized review agents",
+    "AST-based code analysis",
+    "Message-passing architecture",
+    "Priority-based finding aggregation",
+    "Rich terminal output",
+    "Configurable review profiles"
+  ],
+  "test_status": "PASSED",
+  "sample_input": {
+    "description": "Python files to review",
+    "example": "python -m src.cli review src/ --profile thorough"
+  },
+  "sample_output": {
+    "description": "Code review findings",
+    "example": "CRITICAL: eval() usage at line 15 (SecurityAgent)"
+  }
+}
