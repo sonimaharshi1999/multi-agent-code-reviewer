@@ -1,0 +1,102 @@
+======================================================================
+  Multi-Agent Code Review System
+======================================================================
+
+Author: Maharshi Soni
+Category: multi-agent
+Difficulty: advanced
+
+----------------------------------------------------------------------
+DESCRIPTION
+----------------------------------------------------------------------
+Multi-agent system with specialized agents (Security, Performance, Style, Orchestrator) collaborating via message-passing architecture for comprehensive code reviews.
+
+----------------------------------------------------------------------
+TECH STACK
+----------------------------------------------------------------------
+  - pydantic
+  - click
+  - rich
+  - pytest
+
+----------------------------------------------------------------------
+FEATURES
+----------------------------------------------------------------------
+  * Four specialized review agents
+  * AST-based code analysis
+  * Message-passing architecture
+  * Priority-based finding aggregation
+  * Rich terminal output
+  * Configurable review profiles
+
+----------------------------------------------------------------------
+SAMPLE INPUT
+----------------------------------------------------------------------
+  Python files to review
+
+  Example:
+    python -m src.cli review src/ --profile thorough
+
+----------------------------------------------------------------------
+SAMPLE OUTPUT
+----------------------------------------------------------------------
+  Code review findings
+
+  Example:
+    CRITICAL: eval() usage at line 15 (SecurityAgent)
+
+----------------------------------------------------------------------
+PROJECT STRUCTURE
+----------------------------------------------------------------------
+  .gitignore
+  project-idea.json
+  pyproject.toml
+  README.md
+  .github/workflows/test.yml
+  multi_agent_code_reviewer.egg-info/dependency_links.txt
+  multi_agent_code_reviewer.egg-info/entry_points.txt
+  multi_agent_code_reviewer.egg-info/PKG-INFO
+  multi_agent_code_reviewer.egg-info/requires.txt
+  multi_agent_code_reviewer.egg-info/SOURCES.txt
+  multi_agent_code_reviewer.egg-info/top_level.txt
+  src/cli.py
+  src/message_bus.py
+  src/models.py
+  src/renderer.py
+  src/__init__.py
+  src/agents/base.py
+  src/agents/orchestrator.py
+  src/agents/performance_agent.py
+  src/agents/security_agent.py
+  src/agents/style_agent.py
+  src/agents/__init__.py
+  src/providers/api_provider.py
+  src/providers/base.py
+  src/providers/claude_cli.py
+  src/providers/__init__.py
+  tests/conftest.py
+  tests/test_message_bus.py
+  tests/test_models.py
+  tests/test_orchestrator.py
+  tests/test_performance_agent.py
+  tests/test_providers.py
+  tests/test_security_agent.py
+  tests/test_style_agent.py
+  tests/__init__.py
+  tests/fixtures/sample_clean.py
+  tests/fixtures/sample_complex.py
+  tests/fixtures/sample_style_issues.py
+  tests/fixtures/sample_vulnerable.py
+  tests/fixtures/__init__.py
+
+----------------------------------------------------------------------
+TEST RESULTS
+----------------------------------------------------------------------
+  Status: PASSED
+  Tests Run: 46
+  Passed: 46
+  Failed: 0
+
+======================================================================
+  Author: Maharshi Soni  |  License: MIT
+======================================================================

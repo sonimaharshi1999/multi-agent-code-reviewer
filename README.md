@@ -1,5 +1,7 @@
 # Multi-Agent Code Review System
 
+![Tests](https://github.com/sonimaharshi1999/multi-agent-code-reviewer/actions/workflows/test.yml/badge.svg) ![Python 3.10+](https://img.shields.io/badge/python-3.10%2B-blue.svg) ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+
 A multi-agent system where specialized AI agents collaborate to review Python code. Each agent has a distinct responsibility -- security vulnerability detection, performance/complexity analysis, and style/convention checking -- coordinated by an orchestrator that merges and deduplicates their findings.
 
 ---
@@ -193,6 +195,25 @@ multi-agent-code-reviewer/
 - **Persistent findings database:** Storing findings in SQLite or PostgreSQL would enable trend analysis (is this codebase getting more or less secure over time?) and suppression of acknowledged findings.
 
 ---
+
+
+
+---
+
+## Sample Input / Output
+
+![Sample Input and Output](assets/io-card.png)
+
+---
+
+## Project Overview
+
+![Project Summary](assets/report-card.png)
+
+### Reports
+- [HTML Report](reports/multi-agent-code-reviewer-report.html) - interactive report
+- [PDF Report](reports/multi-agent-code-reviewer-report.pdf) - downloadable PDF
+- [TXT Report](reports/multi-agent-code-reviewer-report.txt) - plain text
 
 ## License
 
